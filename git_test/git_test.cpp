@@ -5,22 +5,17 @@ using namespace std;
 class People
 {
 public:
-	People(string name, int age) : name(name), age(age) {};
+	People(string name) : name(name) {};
 
-	const void print() { cout << "Name: " << name << "\n" << "Age: " << age; }
+	const void print() { cout << "Name: " << name; }
 
 private:
 	string name;
-	int age;
 };
 
-int sum(int a, int b) {
-	return a + b;
-}
 
 int main()
 {
-	People vlad = { "vlad",12 };
+	People vlad = { "vlad" };
 	vlad.print();
-	cout << endl << sum(10, 6);
 }
